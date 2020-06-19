@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DrawActivity"
+    android:background="#44cccccc">
+
+    <!--画笔大小控制器-->
+    <swu.xl.xlseekbar.XLSeekBar
+        android:id="@+id/size_controller"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_view"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#ffffff"
+        app:maxProgress="100"
+
+        />
+
+    <!--画板-->
+    <swu.xl.xldrawboard.XLDrawBoard
+        android:id="@+id/draw_board"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/size_controller"
+        app:layout_constraintEnd_toStartOf="@id/color_controller"
+        app:layout_constraintBottom_toTopOf="@id/bottom_view"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <!--颜色控制器-->
+    <include
+        layout="@layout/color_layout"
+        android:id="@+id/color_controller"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_view"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#ffffcc"
+        android:orientation="vertical"
+        />
+
+    <!--底部控制器-->
+    <swu.xl.bottomview.XLBottomView
+        android:background="#cccccccc"
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:hasLeftOrRightSize="true"
+        app:isSelectClick="true"
+        app:normal_color="#000000"
+        app:select_color="#000000"
+        app:item_size="50"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

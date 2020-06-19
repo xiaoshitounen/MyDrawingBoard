@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <swu.xl.xltoolbar.XLToolBar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_id="@layout/main_use_bar"
+        />
+
+    <swu.xl.mydrawingboard.SelfView.XLListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:layout_margin="10dp"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        />
+
+</RelativeLayout>

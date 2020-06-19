@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6C9AD7">
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/edit"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        />
+
+    <Button
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="画作"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/add"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        />
+
+
+</RelativeLayout>
