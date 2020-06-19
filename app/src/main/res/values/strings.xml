@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyDrawingBoard</string>
+    <string name="app_name">画作</string>
     <string name="IMG">img</string>
     <string name="NAME">name</string>
     <string name="DATE">date</string>
